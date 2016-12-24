@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mirage"
+    android:background="@drawable/background_csgo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jack.csgo_map_callouts.MirageActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mirage_callout"/>
+
+</FrameLayout>

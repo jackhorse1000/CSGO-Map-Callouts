@@ -50,8 +50,32 @@ public class MainMenu extends AppCompatActivity {
                                     int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent newActivity = new Intent(MainMenu.this, DustTwoActivity.class);
-                        startActivity(newActivity);
+                        Intent dustActivity = new Intent(MainMenu.this, DustTwoActivity.class);
+                        startActivity(dustActivity);
+                        break;
+                    case 1:
+                        Intent mirageActivity = new Intent(MainMenu.this, MirageActivity.class);
+                        startActivity(mirageActivity);
+                        break;
+                    case 2:
+                        Intent nukeActivity = new Intent(MainMenu.this, NukeActivity.class);
+                        startActivity(nukeActivity);
+                        break;
+                    case 3:
+                        Intent trainActivity = new Intent(MainMenu.this, TrainActivity.class);
+                        startActivity(trainActivity);
+                        break;
+                    case 4:
+                        Intent overpassActivity = new Intent(MainMenu.this, OverpassActivity.class);
+                        startActivity(overpassActivity);
+                        break;
+                    case 5:
+                        Intent cobblestoneActivity = new Intent(MainMenu.this, CobblestoneActivity.class);
+                        startActivity(cobblestoneActivity);
+                        break;
+                    case 6:
+                        Intent cacheActivity = new Intent(MainMenu.this, CacheActivity.class);
+                        startActivity(cacheActivity);
                         break;
 
 
@@ -87,27 +111,6 @@ public class MainMenu extends AppCompatActivity {
                 return itemView;
 //            return super.getView(position, convertView, parent);
         }
-
-//        public void onItemClick(AdapterView parent, View v, int position, long id) {
-//            String value = mymenu.get(position).toString();
-//            switch(value){
-//                case "value1":
-//                    Intent intent = new Intent(this, DustTwoActivity.class); startActivity(intent);
-//                    break;
-//
-////                case "value2":
-////                    Intent intent = new Intent(this, activity2.class); startActivity(intent);
-////                    break;
-////
-////                case "value3":
-////                    Intent intent = new Intent(this, activity3.class); startActivity(intent);
-////                    break;
-//            }
-//        }
-
-
-
-
 
     }
 }
