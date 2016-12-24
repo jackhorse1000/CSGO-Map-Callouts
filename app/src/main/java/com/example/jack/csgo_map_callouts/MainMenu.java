@@ -1,9 +1,11 @@
 package com.example.jack.csgo_map_callouts;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -27,12 +29,12 @@ public class MainMenu extends AppCompatActivity {
     }
 
     private void populateMenuList(){
-        mymenu.add(new menu("Dust II",R.drawable.cache_background));
-        mymenu.add(new menu("Mirage", R.drawable.cache_background));
-        mymenu.add(new menu("Nuke", R.drawable.cache_background));
-        mymenu.add(new menu("Train", R.drawable.cache_background));
-        mymenu.add(new menu("Overpass", R.drawable.cache_background));
-        mymenu.add(new menu("Cobblestone", R.drawable.cache_background));
+        mymenu.add(new menu("Dust II", R.drawable.dust_two_background));
+        mymenu.add(new menu("Mirage", R.drawable.mirage_background));
+        mymenu.add(new menu("Nuke", R.drawable.nuke_background));
+        mymenu.add(new menu("Train", R.drawable.train_background));
+        mymenu.add(new menu("Overpass", R.drawable.overpass_background));
+        mymenu.add(new menu("Cobblestone", R.drawable.cobblestone_background));
         mymenu.add(new menu("Cache", R.drawable.cache_background));
 
     }
@@ -41,7 +43,22 @@ public class MainMenu extends AppCompatActivity {
         ArrayAdapter<menu> adapter = new MyListAdapter();
         ListView list = (ListView) findViewById(R.id.mainMenuListView);
         list.setAdapter(adapter);
-    }
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                switch (position) {
+                    case 0:
+                        Intent newActivity = new Intent(MainMenu.this, DustTwoActivity.class);
+                        startActivity(newActivity);
+                        break;
+
+
+                }
+
+            }
+        });}
 
     private class MyListAdapter extends ArrayAdapter<menu>{
         public MyListAdapter(){
@@ -70,6 +87,24 @@ public class MainMenu extends AppCompatActivity {
                 return itemView;
 //            return super.getView(position, convertView, parent);
         }
+
+//        public void onItemClick(AdapterView parent, View v, int position, long id) {
+//            String value = mymenu.get(position).toString();
+//            switch(value){
+//                case "value1":
+//                    Intent intent = new Intent(this, DustTwoActivity.class); startActivity(intent);
+//                    break;
+//
+////                case "value2":
+////                    Intent intent = new Intent(this, activity2.class); startActivity(intent);
+////                    break;
+////
+////                case "value3":
+////                    Intent intent = new Intent(this, activity3.class); startActivity(intent);
+////                    break;
+//            }
+//        }
+
 
 
 
