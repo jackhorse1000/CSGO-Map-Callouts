@@ -17,14 +17,16 @@ import java.util.List;
 public class MainMenu extends AppCompatActivity {
     private List<menu> mymenu = new ArrayList<menu>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+
+
         populateMenuList();
         populateListView();
-
 
     }
 
