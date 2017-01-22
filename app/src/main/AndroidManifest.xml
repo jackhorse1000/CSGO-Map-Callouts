@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jack.csgo_map_callouts">
+    package="com.jshdev.jack.csgo_map_callouts">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <uses-permission android:name="android.permission.INTERNET"/>
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
         <activity
-            android:name=".MainMenu"
+            android:name="com.jshdev.jack.csgo_map_callouts.MainMenu"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DustTwoActivity" />
-        <activity android:name=".MirageActivity" />
-        <activity android:name=".NukeActivity" />
-        <activity android:name=".TrainActivity" />
-        <activity android:name=".OverpassActivity" />
-        <activity android:name=".CobblestoneActivity" />
-        <activity android:name=".CacheActivity"></activity>
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.DustTwoActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.MirageActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.NukeActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.TrainActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.OverpassActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.CobblestoneActivity" />
+        <activity android:name="com.jshdev.jack.csgo_map_callouts.CacheActivity"></activity>
     </application>
 
 </manifest>

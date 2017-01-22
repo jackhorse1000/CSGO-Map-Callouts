@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_csgo"
-    tools:context="com.example.jack.csgo_map_callouts.OverpassActivity">
+    tools:context="com.jshdev.jack.csgo_map_callouts.OverpassActivity">
 
     <ImageView
         android:layout_width="match_parent"

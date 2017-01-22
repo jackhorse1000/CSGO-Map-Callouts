@@ -6,7 +6,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.example.jack.csgo_map_callouts"
+        applicationId "com.jshdev.jack.csgo_map_callouts"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

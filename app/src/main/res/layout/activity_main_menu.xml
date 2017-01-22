@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jack.csgo_map_callouts.MainMenu">
+    tools:context="com.jshdev.jack.csgo_map_callouts.MainMenu">
 <!--
     <LinearLayout
         android:orientation="vertical"

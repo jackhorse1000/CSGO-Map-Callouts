@@ -1,4 +1,4 @@
-package com.example.jack.csgo_map_callouts;
+package com.jshdev.jack.csgo_map_callouts;
 
 import org.junit.Test;
 
