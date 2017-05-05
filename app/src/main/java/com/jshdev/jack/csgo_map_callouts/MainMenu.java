@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -104,11 +106,13 @@ public class MainMenu extends AppCompatActivity {
 
             //fill the view
             ImageView imageView = (ImageView)itemView.findViewById(R.id.background);
-            imageView.setImageResource(currentMenu.getBackground());
+            //imageView.setImageResource(currentMenu.getBackground());
+            Picasso.with(getContext()).load(currentMenu.getBackground()).into(imageView);
 
             //Make
             TextView textView = (TextView) itemView.findViewById(R.id.txtMapName);
             textView.setText(currentMenu.getMapName());
+
 
                 return itemView;
 //            return super.getView(position, convertView, parent);
