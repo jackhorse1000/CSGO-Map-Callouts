@@ -6,11 +6,12 @@
     android:background="@drawable/background_csgo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jack.csgo_map_callouts.MirageActivity">
+    tools:context="com.jshdev.jack.csgo_map_callouts.MirageActivity">
 
-    <ImageView
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/mirageImageView"
         android:src="@drawable/mirage_callout"/>
 
     <com.google.android.gms.ads.AdView

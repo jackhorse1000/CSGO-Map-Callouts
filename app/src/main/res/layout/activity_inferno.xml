@@ -2,17 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_cache"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_csgo"
-    tools:context="com.jshdev.jack.csgo_map_callouts.CacheActivity">
+    tools:context="com.jshdev.jack.csgo_map_callouts.InfernoActivity">
 
     <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/cacheImageView"
-        android:src="@drawable/cache_callout"/>
+        android:id="@+id/infernoImageView"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

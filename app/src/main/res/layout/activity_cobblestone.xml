@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_csgo"
-    tools:context="com.example.jack.csgo_map_callouts.CobblestoneActivity">
+    tools:context="com.jshdev.jack.csgo_map_callouts.CobblestoneActivity">
 
-    <ImageView
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/cobblestoneImageView"
         android:src="@drawable/cobblestone_callout"/>
 
     <com.google.android.gms.ads.AdView
