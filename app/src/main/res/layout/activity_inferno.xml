@@ -4,14 +4,13 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jshdev.jack.csgo_map_callouts.MirageActivity">
+    tools:context="com.jshdev.jack.csgo_map_callouts.InfernoActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/mirageImageView"
+        android:id="@+id/infernoImageView"
         tools:ignore="ContentDescription" />
-
 
 
 

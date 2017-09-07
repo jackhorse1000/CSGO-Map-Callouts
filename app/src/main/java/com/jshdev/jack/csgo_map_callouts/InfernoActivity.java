@@ -6,37 +6,31 @@ import android.widget.ImageView;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 
-public class DustTwoActivity extends AppCompatActivity {
-
+public class InfernoActivity extends AppCompatActivity {
 
     InterstitialAd mInterstitialAd;
     private InterstitialAd interstitial;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dust_two);
+        setContentView(R.layout.activity_inferno);
 
-
-        ImageView imageView = (ImageView) findViewById(R.id.dustTwoImageView);
-        imageView.setImageResource(R.drawable.dust_two_callout);
+        ImageView imageView = (ImageView) findViewById(R.id.infernoImageView);
+        imageView.setImageResource(R.drawable.inferno_callout);
         PhotoViewAttacher photoView = new PhotoViewAttacher(imageView);
         photoView.update();
-
 
 
         AdRequest adRequest = new AdRequest.Builder().build();
 
 
         // Prepare the Interstitial Ad
-        interstitial = new InterstitialAd(DustTwoActivity.this);
+        interstitial = new InterstitialAd(InfernoActivity.this);
         // Insert the Ad Unit ID
         interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
 
@@ -58,5 +52,4 @@ public class DustTwoActivity extends AppCompatActivity {
             interstitial.show();
         }
     }
-
 }
