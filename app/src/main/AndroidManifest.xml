@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jack.csgo_map_callouts">
+    package="com.jshdev.jack.csgo_map_callouts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -8,13 +11,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainMenu">
+
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DustTwoActivity" />
+        <activity android:name=".MirageActivity" />
+        <activity android:name=".NukeActivity" />
+        <activity android:name=".TrainActivity" />
+        <activity android:name=".OverpassActivity" />
+        <activity android:name=".CobblestoneActivity" />
+        <activity android:name=".CacheActivity" />
+        <activity android:name=".InfernoActivity" />
     </application>
 
 </manifest>
