@@ -12,10 +12,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,8 +21,6 @@ import java.util.List;
 public class MainMenu extends AppCompatActivity {
     private final List<menu> mymenu = new ArrayList<>();
     private AdView mAdView;
-    InterstitialAd mInterstitialAd;
-    private InterstitialAd interstitial;
 
 
     @Override
@@ -35,24 +31,6 @@ public class MainMenu extends AppCompatActivity {
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
-
-        // Prepare the Interstitial Ad
-        interstitial = new InterstitialAd(MainMenu.this);
-        // Insert the Ad Unit ID
-        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
-
-        interstitial.loadAd(adRequest);
-        // Prepare an Interstitial Ad Listener
-        interstitial.setAdListener(new AdListener() {
-            public void onAdLoaded() {
-                // Call displayInterstitial() function
-                displayInterstitial();
-            }
-
-        });
-
-
 
         populateMenuList();
         populateListView();
@@ -156,10 +134,4 @@ public class MainMenu extends AppCompatActivity {
 
     }
 
-    private void displayInterstitial() {
-// If Ads are loaded, show Interstitial else show nothing.
-        if (interstitial.isLoaded()) {
-            interstitial.show();
-        }
-    }
 }

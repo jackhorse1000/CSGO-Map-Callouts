@@ -29,7 +29,7 @@ public class TrainActivity extends AppCompatActivity {
         photoView.update();
         //Picasso.with(this.getApplicationContext()).load(R.drawable.train_callout).into(imageView);
 
-        
+
         AdRequest adRequest = new AdRequest.Builder().build();
 
 
